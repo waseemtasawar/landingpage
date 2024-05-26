@@ -82,3 +82,107 @@ nav li a:hover {
   font-weight: 500;
   cursor: pointer;
 }
+.btn_sec {
+  display: flex;
+  align-items: center;
+  padding: 23px 40px;
+  border: 0;
+  outline: 0;
+  border-radius: 0px 6px 6px 0px;
+  background: #ff5344;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.content {
+  margin-top: 8%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  /* max-width: 620px; */
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color: white; */
+}
+
+.content_span {
+  color: #f88424;
+  font-family: Alice;
+}
+
+.content_para {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content_alice {
+  color: #000;
+  font-family: Alice;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 20px;
+}
+
+.content h1 {
+  color: #000000;
+  font-family: Alice;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content form {
+  display: flex;
+  align-items: center;
+  /* background: #ffffff; */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  border: 1px solid rgb(228, 228, 228) !important;
+  padding: 20px;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.content form input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+  /* border-color: 1px solid red; */
+}
+
+.content form .btn {
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
