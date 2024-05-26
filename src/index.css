@@ -1,68 +1,84 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
   min-height: 100vh;
+  background-image: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.21) 35.02%,
+    rgba(249, 253, 250, 0.2) 36.38%,
+    rgba(223, 244, 230, 0.18) 41.97%,
+    rgba(15, 170, 70, 0) 87.43%
+  );
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.logo {
+  width: 180px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: text-decoration 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav li a:hover {
+  color: #ff5c11 !important;
+  text-decoration: underline;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 21px;
+}
+
+.btn_register {
+  display: flex;
+  align-items: center;
+  padding: 12px 21px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background: #ff5344;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
 }
